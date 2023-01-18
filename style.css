@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;  
 }
-body{
-   background-image: url(./assets/background.jpg); 
-}
 #welcomepage{
    background-repeat: no-repeat;
-   width: 100vw;
-   height: 100vh;
+   background-position: center;
+   background-size: cover;
    overflow: auto;
-   /* background-image: url(./assets/background.jpg);  */
+   background-image: url(./assets/background.jpg); 
 }
 .welcome{
     width: 100vw;
@@ -74,4 +71,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 768px){
+    #welcomepage{
+        background-image: url(./assets/background.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 100vw;
+        height: 100vh; */
+
+}
 }
